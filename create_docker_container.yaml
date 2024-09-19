@@ -1,0 +1,56 @@
+---
+- name: Create and Start Docker Container with Debian on Localhost (WSL)
+  hosts: localhost
+  become: yes
+  vars:
+    ansible_python_interpreter: /usr/bin/python3
+  tasks:
+
+    - name: Install Docker dependencies (if not already installed)
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg-agent
+          - software-properties-common
+        state: present
+        update_cache: yes
+
+    - name: Add Docker’s official GPG key
+      apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+    - name: Add Docker repository
+      apt_repository:
+        repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+        state: present
+
+    - name: Install Docker (this step is optional if Docker is already working through Docker Desktop)
+      apt:
+        name: docker-ce
+        state: latest
+        update_cache: yes
+
+    - name: Pull Debian Docker image
+      docker_image:
+        name: debian
+        source: pull
+
+    - name: Create and start Debian container
+      docker_container:
+        name: debian_container
+        image: debian
+        state: started
+        tty: yes
+        command: "/bin/bash"
+
+    - name: Ensure the container is running
+      docker_container_info:
+        name: debian_container
+      register: container_info
+
+    - name: Debug container info
+      debug:
+        var: container_info
