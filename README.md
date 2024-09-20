@@ -1,9 +1,2 @@
-# DevOps_-_Automation
-Repository for code related to ansible, terraform, docker, kubernetes, aws, python and more
-
-To run the playbook that creates the container, specifing the hosts file, use the command:
-
-    #Code snippet
-    ansible-playbook -i hosts/hosts create_docker_container.yaml --ask-become-pass
-
-Note: Might need to run "sudo apt install python3-docker" to pull the debian image
+# DevOps & Automation
+Repository for code challenges related to DevOps and practice exercises. Might include code related to linux scripts, ansible, terraform, docker, kubernetes, aws, python and more.

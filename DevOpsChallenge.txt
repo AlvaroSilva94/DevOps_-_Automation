@@ -1,0 +1,131 @@
+Week 1: Linux & Shell Scripting
+
+    Goal: Master basic Linux commands, shell scripting, and system administration tasks.
+
+Day 1:
+
+    Practice basic Linux commands: file manipulation (ls, cp, mv, rm), directory navigation (cd, pwd), and text processing (cat, grep, awk, sed).
+    Task: Create a script that searches for a specific pattern in a set of log files.
+
+Day 2:
+
+    Focus on file permissions, process management (ps, top, kill), and disk usage commands (df, du).
+    Task: Write a script that monitors a running process and restarts it if it stops.
+
+Day 3:
+
+    Learn basic networking commands (netstat, ping, curl, traceroute).
+    Task: Write a script to check the connectivity of a list of IP addresses or URLs.
+
+Day 4:
+
+    Study crontab and automate simple tasks using cron jobs.
+    Task: Set up a cron job to run a backup script daily.
+
+Day 5:
+
+    Practice advanced text processing with awk, sed, and regular expressions.
+    Task: Create a script that extracts error messages from a log file and saves them to a separate file.
+
+Day 6 & 7:
+
+    Review: Revisit the scripts you wrote, refactor them for efficiency, and add comments. Try to understand how you can optimize your code.
+
+Week 2: Version Control (Git) & CI/CD Concepts
+
+    Goal: Get comfortable with Git and CI/CD tools like Jenkins, GitHub Actions, or GitLab CI.
+
+Day 1:
+
+    Learn basic Git commands: clone, commit, push, pull, branch, merge, rebase.
+    Task: Simulate a Git workflow with branches: create a feature branch, make changes, and merge it back.
+
+Day 2:
+
+    Study Git conflict resolution.
+    Task: Create a merge conflict on purpose and practice resolving it.
+
+Day 3:
+
+    Introduction to CI/CD pipelines.
+    Task: Set up a simple pipeline on GitHub Actions or GitLab CI to build and test a basic project.
+
+Day 4:
+
+    Explore setting up jobs for automated testing.
+    Task: Modify the pipeline to include unit tests for a sample application.
+
+Day 5:
+
+    Learn to add deployment steps in CI/CD.
+    Task: Add a step to your CI/CD pipeline to deploy to a development environment.
+
+Day 6 & 7:
+
+    Review: Go through your CI/CD pipelines and make sure you understand each step. Experiment with different triggers and conditions.
+
+Week 3: Containerization (Docker) & Orchestration (Kubernetes)
+
+    Goal: Gain practical experience with Docker and Kubernetes basics.
+
+Day 1:
+
+    Learn Docker basics: images, containers, volumes, and networks.
+    Task: Create a Dockerfile for a simple web application.
+
+Day 2:
+
+    Practice Docker Compose for multi-container setups.
+    Task: Set up a Docker Compose file for a basic web application and database.
+
+Day 3:
+
+    Introduction to Kubernetes: pods, deployments, and services.
+    Task: Deploy your Dockerized application to a local Kubernetes cluster (like Minikube).
+
+Day 4:
+
+    Learn about Kubernetes configuration management: ConfigMaps and Secrets.
+    Task: Create a Kubernetes deployment that uses ConfigMaps for environment variables.
+
+Day 5:
+
+    Practice scaling and updating applications in Kubernetes.
+    Task: Scale your deployment and roll out updates using rolling deployments.
+
+Day 6 & 7:
+
+    Review: Experiment with failure scenarios in Kubernetes, like killing pods and observing auto-recovery.
+
+Week 4: Infrastructure as Code (IaC) & Cloud Platforms
+
+    Goal: Get familiar with IaC tools like Terraform and cloud platforms (AWS, GCP, or Azure).
+
+Day 1:
+
+    Learn basic Terraform: providers, resources, and state management.
+    Task: Write a Terraform script to provision an EC2 instance on AWS or a VM on GCP.
+
+Day 2:
+
+    Study variables, outputs, and modules in Terraform.
+    Task: Refactor your script to use variables and outputs.
+
+Day 3:
+
+    Explore cloud networking basics: VPCs, subnets, security groups.
+    Task: Modify your Terraform script to set up networking components.
+
+Day 4:
+
+    Introduction to AWS CloudFormation or Azure ARM templates.
+    Task: Create a simple stack with CloudFormation (or equivalent on Azure).
+
+Day 5:
+
+    Learn about monitoring and logging: AWS CloudWatch, Prometheus, or ELK stack.
+    Task: Set up a basic monitoring solution for your deployed infrastructure.
+
+Day 6 & 7:
+
+    Review: Ensure you understand the IaC code you wrote and explore ways to improve or extend it.
