@@ -1,0 +1,19 @@
+---
+- name: Download Debian Docker image and start a container on localhost
+  hosts: localhost
+  become: yes
+  tasks:
+
+    - name: Pull the latest Debian image from Docker Hub
+      docker_image:
+        name: debian
+        source: pull
+
+    - name: Create and start a Debian container
+      docker_container:
+        name: debian_container
+        image: debian
+        state: started
+        command: /bin/bash
+        tty: yes
+
